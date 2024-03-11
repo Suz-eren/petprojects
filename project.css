@@ -1,0 +1,291 @@
+.navigation {
+    height: 80px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.navigation > a {color: black}
+
+.navigation > a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+.navigation > a:not(:last-child) {
+    margin-right: 7%;
+  }
+.navigation2 {
+    height: 100px;
+    border-radius: 20px;
+    background-color: #F5CBA7;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.content {
+    height: 1350px;
+    border-radius: 20px;
+    background-color: #F5CBA7;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.buttonContainer {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.recomend {
+    display: grid;
+    grid-template-columns: 1fr 400px 400px;
+    
+}
+
+.recomend2 {
+    display: grid;
+    grid-template-columns: 1fr 400px 400px;
+    
+}
+
+.recomend3 {
+    display: grid;
+    grid-template-columns: 1fr 400px 400px;
+    
+}
+
+.rec1 {
+    height: 175px;
+    width: 350px;
+    border: 2px solid ;
+    border-radius: 14px;
+    margin: 15px 5px;
+    margin-right: 20px;
+}
+
+.rec2 {
+    height: 175px;
+    width: 350px;
+    margin: 15px 5px;
+    margin-right: 20px;
+}
+
+.rec3 {
+    height: 175px;
+    width: 350px;
+    margin: 15px 5px;
+    margin-right: 20px;
+}
+
+.rec4 {
+    height: 175px;
+    width: 350px;
+    margin: 15px 5px;
+    margin-right: 20px;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+
+.footer {
+    height: 200px;
+    background-color: #F5CBA7;
+    border-radius: 20px;
+    /*text-align: center;*/
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+}
+
+.footer > a {color: black}
+
+.footer > a:hover {
+    text-decoration: underline;
+}
+.footer > a:not(:last-child) {
+    margin-right: 5%;
+  }
+
+
+
+
+.adaptive {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    /* grid-template-columns: 1fr 300px; создаем вторую колонку шириной в 300 пикселей */
+    /* чтобы добавить еще колонку, пишем еще размер колонки через пробел, добавив её в html */
+    gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .adaptive {
+        width: 1000px;
+        /* grid-template-columns: 1fr 280px; */
+    }
+    .navigation2 {
+        width: 1000px;
+
+    }
+    .content {
+        width: 1000px;
+    }
+    .footer {
+        width: 1000px;
+        float: left;
+    }
+    .navigation {
+        width: 1000px;
+        float: right;
+    }
+    .recomend {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        
+    }
+    .content {
+        height: 1600px;
+        background-color: #F5CBA7;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .adaptive {
+        width: 768px;
+        /* grid-template-columns: 1fr 250px; */
+    }
+    .navigation2 {
+        width: 768px;
+
+    }
+    .content {
+        width: 768px;
+    }
+    .footer {
+        width: 768px;
+        float: left;
+    }
+    .navigation {
+        width: 768px;
+        float: right;
+    }
+    .recomend {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        
+    }
+    .content {
+        height: 2200px;
+        background-color: #F5CBA7;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .recomend2 {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        
+    }
+    
+    .recomend3 {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .adaptive {
+        width: 480px;
+        /*grid-template-columns: 1fr;/* создает один столбец */
+        /* grid-template-rows: 1fr; чтобы main растягивался на свободное место  */
+        /* grid-auto-rows: 100px; чтобы сайдбар был не больше 100px */
+        
+    }
+    .navigation2 {
+        width: 480px;
+
+    }
+    .content {
+        width: 480px;
+    }
+    .footer {
+        width: 480px;
+        float: left;
+    }
+    .navigation {
+        width: 480px;
+        float: left;
+    }
+    /* .recomend {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    } */
+    .content {
+        height: 1900px;
+        background-color: #F5CBA7;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .recomend {
+        display: grid;
+        grid-template-columns: 1fr 220px;
+        
+    }
+    .rec1 {
+        height: 120px;
+        width: 200px;
+        border: 2px solid ;
+        border-radius: 14px;
+        margin: 15px 5px;
+        margin-right: 20px;
+    }
+    .buttonContainer {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .recomend2 {
+        display: grid;
+        grid-template-columns: 1fr 220px;
+        margin-bottom: 50px;
+    }
+    .rec2 {
+        height: 120px;
+        width: 200px;
+        margin: 15px 5px;
+        margin-right: 20px;
+       
+    }
+    .recomend3 {
+        display: grid;
+        grid-template-columns: 1fr 220px;
+        margin-bottom: 50px;
+    }
+
+    .rec3 {
+        height: 120px;
+        width: 200px;
+        margin: 15px 5px;
+        margin-right: 20px;
+    }
+
+    .rec4 {
+        height: 120px;
+        width: 200px;
+        margin: 50px 5px;
+        margin-right: 20px;
+       
+    }
+}
+

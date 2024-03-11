@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Button with JavaScript</title>
+    <link rel="stylesheet" href="project.css">
+    </head>
+
+<html>
+    <head>
+        <script src = "project.js" defer></script> 
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+              function slowScroll(id) {
+                $('html, body').animate({
+                  scrollTop: $(id).offset().top
+                }, 500);
+              }
+          
+             /* $(document).on("scroll", function () {
+                if($(window).scrollTop() === 0)
+                  $("header").removeClass("fixed");
+                else
+                  $("header").attr("class", "fixed");
+              });*/
+            </script>
+        <div class="adaptive">
+            <div class="navigation">
+                <a href="#" onclick="slowScroll('#recomend')" title="Рекомендации">Рекомендации</a>
+                <a href="#" onclick="slowScroll('#recomend2')" title="Работа в Томске">Работа в Томске</a>
+                <a href="#" onclick="slowScroll('#recomend3')" title="Работа в компаниях">Работа в компаниях</a>
+                <a href="#" onclick="slowScroll('#recomend4')" title="Работа по профессиям">Работа по профессиям</a>
+                <a href="#" onclick="slowScroll('#footer')" title="Контакты">Контакты</a>
+            </div>
+            
+
+            <div class="navigation2">
+                <h1>Здесь перемычка между блоком навигации и телом</h1>
+            </div>
+
+            <div class="content">
+                <h1 id="recomend">Рекомендации</h1>
+                <div class="recomend" >
+                    
+                    <div class="rec1">
+                        <h2>Frontend</h2>
+                        <div class="buttonContainer">
+                            <!-- кнопка -->
+                        </div>
+                    </div>
+
+                    <div class="rec1">
+                        <h2>Backend</h2>
+                        <div class="buttonContainer">
+                            <!-- кнопка -->
+                        </div>
+                    </div>
+
+                    <div class="rec1">
+                        <h2>Slesar</h2>
+                        <div class="buttonContainer">
+                            <!-- кнопка -->
+                        </div>
+                    </div>
+
+                    <div class="rec1">
+                        <h2>Driver</h2>
+                        <div class="buttonContainer">
+                            <!-- кнопка -->
+                        </div>
+                    </div>
+
+                    <div class="rec1">
+                        <h2>Analist</h2>
+                        <div class="buttonContainer">
+                            <!-- кнопка -->
+                        </div>
+                    </div>
+
+                    <div class="rec1">
+                        <h2>HR</h2>
+                        <div class="buttonContainer">
+                            <!-- кнопка -->
+                        </div>
+                    </div>
+                </div>
+                <h1 id ="recomend2">Работа в Томске</h1>
+                <div class="recomend2">
+                    
+                    <div class="rec2">
+                        <h2>Frontend</h2>
+                        <h2>HR</h2>
+                        <h2>Manager</h2>
+                    </div>
+
+                    <div class="rec2">
+                        <h2>Backend</h2>
+                        <h2>HR</h2>
+                        <h2>Manager</h2>
+                    </div>
+
+                    <div class="rec2">
+                        <h2>Slesar</h2>
+                        <h2>HR</h2>
+                        <h2>Manager</h2>
+                    </div>
+
+                </div>
+                <h1 id ="recomend3">Работа в компаниях</h1>
+                <div class="recomend3">
+                    
+                    <div class="rec3">
+                        <h2>СБЕР</h2>
+                        <h2>Rubius</h2>
+                        <h2>Enterra</h2>
+                    </div>
+
+                    <div class="rec3">
+                        <h2>ВТБ</h2>
+                        <h2>Вкусно и точка</h2>
+                        <h2>Comodd</h2>
+                    </div>
+
+                    <div class="rec3">
+                        <h2>Теремок</h2>
+                        <h2>Газпром</h2>
+                        <h2>Транснефть</h2>
+                    </div>
+
+                </div>
+                <h1 id ="recomend4">Работа по профессиям</h1>
+                <div class="recomend3">
+                    
+                    <div class="rec4">
+                        <h2>Информационные технологии</h2>
+                        <h2>Автоматизация и автоматика</h2>
+                        <h2>Медицина</h2>
+                    </div>
+
+                    <div class="rec4">
+                        <h2>Наука</h2>
+                        <h2>Рабочий персонал</h2>
+                        <h2>Массмедиа</h2>
+                    </div>
+
+                    <div class="rec4">
+                        <h2>Финансы</h2>
+                        <h2>Юристы</h2>
+                        <h2>Cтроительство</h2>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer" id="footer">
+                <h1>Контакты для связи</h1>
+                <a href="https://github.com/WarpMain/Online-recruit-griaz" title="GitHub">GitHub</a>
+                <a href="https://p2p-project.atlassian.net/jira/people/team/9c73e0f7-65a5-4b93-9da4-ca691e874e01" title="Jira">Jira</a>
+                <a href="https://vk.com/id256258876" title="ProjectManager">ProjectManager</a>
+                <a href="https://vk.com/kord11" title="FooterOwner">FooterOwner</a>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
